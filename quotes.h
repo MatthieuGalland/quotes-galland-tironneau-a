@@ -14,5 +14,6 @@ void print_random_quote(char ** quotes);
 char** load_quotes(char* filename);
 void free_quotes(char** p_p_quotes);
 void delete_quote(char ** quotes, int index);
+void print_all_quotes(char ** quotes);
 
 #endif

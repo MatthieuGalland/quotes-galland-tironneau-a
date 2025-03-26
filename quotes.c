@@ -38,3 +38,9 @@ void delete_quote(char ** quotes, int index) {
         quotes[index] = NULL;
     }
 }
+
+void print_all_quotes(char ** quotes) {
+    for (int i=0;i<MAX_QUOTES;i++) {
+        printf("%s\n", quotes[i]);
+    }
+}
