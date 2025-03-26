@@ -25,3 +25,9 @@ char** load_quotes(char* filename){
     return p_p_quotes;
 }
 
+void free_quotes(char** p_p_quotes){
+    for (int i=0; i<MAX_QUOTES; i++){
+        free(p_p_quotes[i]);
+    }
+    free(p_p_quotes);
+}
