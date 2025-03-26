@@ -25,3 +25,10 @@ char** load_quotes(char* filename){
     return p_p_quotes;
 }
 
+
+void delete_quote(char ** quotes, int index) {
+    if (quotes[index] != NULL) {
+        free(quotes[index]);
+        quotes[index] = NULL;
+    }
+}
