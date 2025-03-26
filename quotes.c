@@ -18,7 +18,7 @@ char** load_quotes(char* filename){
     for(int i = 0; i<MAX_QUOTES; i++){
         k = 0;
         p_p_quotes[i] = (char*)malloc(MAX_QUOTE_SIZE);
-        while((fread(p_p_quotes[i], sizeof(char), 1) !='\0') &&(k<MAX_QUOTE_SIZE)){
+        while((fread(p_p_quotes[i], sizeof(char), 1, p_quotes) !='\0') &&(k<MAX_QUOTE_SIZE)){
             k++;
         }
     }
