@@ -1,4 +1,4 @@
-#include "quotes.h"
+#include "quotes.c"
 #include <time.h>
 
 int main() {
