@@ -7,8 +7,10 @@
 #include <string.h>
 
 #define MAX_QUOTES 10
+#define MAX_QUOTE_SIZE 100
 
 void print_quote(char ** quotes, int index);
 void print_random_quote(char ** quotes);
+char** load_quotes(char* filename);
 
 #endif
